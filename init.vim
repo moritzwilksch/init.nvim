@@ -17,7 +17,6 @@ Plug 'ryanoasis/vim-devicons'                           " pretty icons everywher
 Plug 'luochen1990/rainbow'                              " rainbow parenthesis
 Plug 'hzchirs/vim-material'                             " material color themes
 Plug 'gregsexton/MatchTag'                              " highlight matching html tags
-Plug 'Jorengarenar/vim-MvVis'                           " move visual selection
 "}}}
 
 " ================= Functionalities ================= "{{{
@@ -31,13 +30,13 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}  " better python
 Plug 'tpope/vim-commentary'                             " better commenting
 Plug 'mhinz/vim-startify'                               " cool start up screen
 Plug 'tpope/vim-fugitive'                               " git support
-Plug 'psliwka/vim-smoothie'                             " some very smooth ass scrolling
 Plug 'wellle/tmux-complete.vim'                         " complete words from a tmux panes
 Plug 'tpope/vim-eunuch'                                 " run common Unix commands inside Vim
-Plug 'machakann/vim-sandwich'                           " make sandwiches
 Plug 'christoomey/vim-tmux-navigator'                   " seamless vim and tmux navigation
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'memgraph/cypher.vim'
+Plug 'tpope/vim-surround'
+Plug 'justinmk/vim-sneak'
 call plug#end()
 
 "}}}
@@ -191,14 +190,11 @@ let g:startify_commands = [
 " custom banner
 let g:startify_custom_header = [
  \ '',
- \ '                                                    ▟▙            ',
- \ '                                                    ▝▘            ',
- \ '            ██▃▅▇█▆▖  ▗▟████▙▖   ▄████▄   ██▄  ▄██  ██  ▗▟█▆▄▄▆█▙▖',
- \ '            ██▛▔ ▝██  ██▄▄▄▄██  ██▛▔▔▜██  ▝██  ██▘  ██  ██▛▜██▛▜██',
- \ '            ██    ██  ██▀▀▀▀▀▘  ██▖  ▗██   ▜█▙▟█▛   ██  ██  ██  ██',
- \ '            ██    ██  ▜█▙▄▄▄▟▊  ▀██▙▟██▀   ▝████▘   ██  ██  ██  ██',
- \ '            ▀▀    ▀▀   ▝▀▀▀▀▀     ▀▀▀▀       ▀▀     ▀▀  ▀▀  ▀▀  ▀▀',
- \ '',
+ \ '                       _           ',
+ \ ' _ __   ___  _____   _(_)_ __ ___  ',
+ \ '| '_ \ / _ \/ _ \ \ / / | '_ ` _ \ ',
+ \ '| | | |  __/ (_) \ V /| | | | | | |',
+ \ '|_| |_|\___|\___/ \_/ |_|_| |_| |_|',
  \ '',
  \ '',
  \]
@@ -327,8 +323,7 @@ endfunction
 " ======================== Custom Mappings ====================== "{{{
 
 "" the essentials
-let mapleader=","
-nnoremap ; :
+let mapleader="\\""
 nmap \ <leader>q
 map <F6> :Startify <CR>
 nmap <leader>r :so ~/.config/nvim/init.vim<CR>

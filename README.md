@@ -1,8 +1,3 @@
-<p align="center">
-<img src="./Screens/screen0.png">
-
-</p>
-
 ## Why?
 
 Modern Vim distributions are really huge and bloated with way too many fancy
@@ -228,24 +223,6 @@ highly opinionated).
 for more customizations read throw the config file, there are comments
 everywhere and its easy to interpret, you can also checkout the linked github
 page for each plugin for even more options.
-
-## Demos
-
-### Project files with fzf
-
-![fzf preview](./Screens/screen1.png)
-
-### Project wide search with fzf
-
-![Rg preview](./Screens/screen2.png)
-
-### Git Status
-
-![git status](./Screens/screen3.png)
-
-### workflow demo
-
-[![Workflow Demo](https://img.youtube.com/vi/_R2K0MrGLLI/0.jpg)](https://www.youtube.com/watch?v=_R2K0MrGLLI)
 
 ## Credits
 
