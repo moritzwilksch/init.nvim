@@ -7,6 +7,9 @@ faster and has search. Another example is
 [ThinkVim](https://github.com/hardcoreplayers/ThinkVim) has a separate extension
 for formatting while also having ALE which can do that as well, this double
 functionality is very common, thats one of the things this distro avoids, KISS!
+## Troubleshooting
+### E117: Unknown function: SemshiBufWipeout
+run `:UpdateRemotePlugins`
 
 ## Features
 
